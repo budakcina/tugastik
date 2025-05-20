@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up Page</title>
+
+  <!-- Font Potta One -->
+  <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Potta One', cursive;
+      background-color: #0d0033;
+      background-image: url('hantu.png');
+      background-size: cover;
+      background-repeat: repeat;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .signup-container {
+      background-color: #c30d23;
+      border-radius: 20px;
+      padding: 40px 30px;
+      width: 360px;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .signup-container img.logo {
+      width: 90px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin: 0 0 25px;
+      color: #ffeb00;
+      font-size: 22px;
+      letter-spacing: 1px;
+    }
+
+    .input-group {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .input-wrapper {
+      background-color: #ffeb00;
+      border-radius: 30px;
+      padding: 6px;
+    }
+
+    .input-wrapper input {
+      width: 100%;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 25px;
+      outline: none;
+      font-size: 16px;
+      font-family: 'Potta One', cursive;
+      color: #c30d23;
+      font-weight: bold;
+    }
+
+    .input-wrapper input::placeholder {
+      color: #c30d23;
+      font-weight: bold;
+    }
+
+    button {
+      background-color: #ffeb00;
+      color: #c30d23;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 10px;
+      font-family: 'Potta One', cursive;
+      font-size: 14px;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #ffe000;
+    }
+
+    .characters {
+      margin-top: 25px;
+    }
+
+    .characters img {
+        width: 175px;
+        height: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="signup-container">
+    <img src="logoj.png" alt="J Logo" class="logo" />
+    <h2>SIGN UP</h2>
+
+    <form>
+      <div class="input-group">
+        <div class="input-wrapper">
+          <input type="text" name="username" placeholder="USERNAME" required />
+        </div>
+      </div>
+
+      <div class="input-group">
+        <div class="input-wrapper">
+          <input type="password" name="password" placeholder="PASSWORD" required />
+        </div>
+      </div>
+
+      <button type="submit">SIGN UP</button>
+    </form>
+
+    <div class="characters">
+        <img src="hantu4.png">
+    </div>
+  </div>
+
+</body>
+</html>

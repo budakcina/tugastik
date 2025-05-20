@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+ header {
+  background-color: white;
+ }
+ body {
+  background-image: url('hantu.png');
+  margin: 0;
+ }
+ img {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+ }
+
+ h1 {
+  font-family: "Potta One", system-ui;
+  -webkit-text-stroke: 0.5px black;
+ }
+
+ .btn-signin {
+  float: right;
+  margin-top:95px;
+  margin-right:10px;
+  background-color: yellow;
+  border-color: yellow;
+  border-radius: 5px;
+  height: 30px;
+  width: 75px;
+  color: red;
+  font-family: "Potta One", system-ui;
+ }
+ 
+ .btn-login {
+  float: right;
+  margin-top:95px;
+  margin-right:50px;
+  background-color:red;
+  border-color: red;
+  border-radius: 5px;
+  height: 30px;
+  width: 60px;
+  color:yellow;
+  font-family: "Potta One", system-ui;
+ }
+ 
+.bg img{
+  display: flex;
+  justify-content: center;
+}
+
+.products {
+  padding: 2em;
+  color: #df1a1a;
+}
+
+.products h1 {
+  margin-top: 2em;
+  color: red;
+  text-align: center;
+}
+
+.product-list {
+  display: flex;
+  gap: 1.5em;
+  margin-top: 1em;
+  margin-left: 75px;
+  align-items: center;
+  justify-content: center;
+}
+
+.product {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1em;
+  width: 200px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.5em;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+
+.product button {
+  margin-top: 0.5em;
+  padding: 0.5em 1em;
+  background-color: #df1a1a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+</style>
+
+<body>
+<div class="bghantu">
+  
+</div>
+
+<header>
+  <img src="logo1.png">
+  <a class="btn-login" href="login.html">LOGIN</a>
+  <a class="btn-signin" href="signup.html">SIGN UP</a>
+</header>
+<div class="bg">
+  <img src="maskot.png">
+</div>
+<section class="products">
+  <br>
+  <h1>PRODUCT</h1>
+  <br>
+  <div class="product-list">
+    <div class="product">
+      <img src="baju.png">
+      <p>POLO</p>
+      <p>100k</p>
+      <button>Beli</button>
+    </div>
+    <div class="product">
+      <img src="baju2.png">
+      <p>POLO</p>
+      <p>100k</p>
+      <button>Beli</button>
+    </div>
+    <div class="product">
+      <img src="baju3.png">
+      <p>POLO</p>
+      <p>100k</p>
+      <button>Beli</button>
+    </div>
+  </div>
+</section>
+</div>
+</body>
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="logoj.png" alt="Pac-Man J Logo">
+      </div>
+      <!-- Social Icons -->
+      <div class="social-icons">
+        <a href="https://www.instagram.com/fazaaanrr/" target="_blank" rel="noopener"><i class="ri-instagram-line"></i>
+        </a>
+      </div>
+    </div>
+    <div class="footer-right">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in
+        culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- Styles -->
+<style>
+  .site-footer {
+    background-color: #130435;
+    color: #fff;
+    padding: 40px 0;
+    font-family: 'Baloo Bhai', cursive, sans-serif;
+  }
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+  }
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    min-width: 200px;
+  }
+  .logo img {
+    width: 100px;
+    height: auto;
+  }
+  .social-icons a img {
+    width: 50px;
+    height: 50px;
+    margin-right: 12px;
+    transition: transform 0.3s ease;
+  }
+  .social-icons a:last-child img {
+    margin-right: 0;
+  }
+  .social-icons a:hover img {
+    transform: scale(1.1);
+  }
+  .footer-right {
+    flex: 1;
+  }
+  .footer-right p {
+    margin-top: 10px;
+    line-height: 1.6;
+    font-size: 16px;
+  }
+
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .footer-right {
+      margin-top: 30px;
+    }
+  }
+</style>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</html>
