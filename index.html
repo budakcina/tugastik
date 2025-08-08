@@ -11,10 +11,13 @@
   @import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
  header {
   background-color: white;
+  margin-top: 0;
+  padding: 10px;
  }
  body {
   background-image: url('hantu.png');
   margin: 0;
+  padding: 0;
  }
  img {
   margin-top: 50px;
@@ -31,6 +34,7 @@
   float: right;
   margin-top:95px;
   margin-right:10px;
+  
   background-color: yellow;
   border-color: yellow;
   border-radius: 5px;
@@ -38,29 +42,26 @@
   width: 75px;
   color: red;
   font-family: "Potta One", system-ui;
-text-decoration: none;
-align-items: center;
-align-content: center;
  }
  
  .btn-login {
+  text-align: center;
+  align-items: center;
   float: right;
   margin-top:95px;
   margin-right:50px;
   background-color:red;
   border-color: red;
   border-radius: 5px;
-  height: 30px;
-  width: 60px;
+  height: 35px;
+  width: 70px;
   color:yellow;
   font-family: "Potta One", system-ui;
-text-decoration: none;
-align-content: center;
  }
- 
 .bg img{
-  display: flex;
-  justify-content: center;
+  position: center;
+  width: 96%;
+  height: 100%;
 }
 
 .products {
@@ -78,9 +79,7 @@ align-content: center;
   display: flex;
   gap: 1.5em;
   margin-top: 1em;
-  align-items: center;
   justify-content: center;
-flex-wrap: wrap;
 }
 
 .product {
@@ -123,8 +122,8 @@ flex-wrap: wrap;
 
 <header>
   <img src="logo1.png">
-  <a class="btn-login" href="login.html">LOGIN</a>
-  <a class="btn-signin" href="signup.html">SIGN UP</a>
+  <button class="btn-login" href="login.html">LOGIN</button>
+  <button class="btn-signin" href="signup.html">SIGN UP</button>
 </header>
 <div class="bg">
   <img src="maskot.png">
@@ -152,7 +151,9 @@ flex-wrap: wrap;
       <p>100k</p>
       <button>Beli</button>
     </div>
-<div class="product">
+  </div>
+  <div class="product-list">
+    <div class="product">
       <img src="baju.png">
       <p>POLO</p>
       <p>100k</p>
@@ -174,9 +175,6 @@ flex-wrap: wrap;
 </section>
 </div>
 </body>
-<br>
-<br>
-<br>
 <footer class="site-footer">
   <div class="footer-container">
     <div class="footer-left">
@@ -212,8 +210,6 @@ flex-wrap: wrap;
     color: #fff;
     padding: 40px 0;
     font-family: 'Baloo Bhai', cursive, sans-serif;
-    position: fixed;
-  bottom: 0;
   }
   .footer-container {
     max-width: 1200px;
@@ -248,7 +244,6 @@ flex-wrap: wrap;
   }
   .footer-right {
     flex: 1;
-    font-family: "Potta One", system-ui;
   }
   .footer-right p {
     margin-top: 10px;
